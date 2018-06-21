@@ -18,8 +18,7 @@ public class HealthScript : MonoBehaviour {
 
   public void Damage(int damageCount){
       hp -= damageCount;
-      if (hp <= 0)
-      {
+      if (hp <= 0){
         Destroy(gameObject);
       }
   }
@@ -27,8 +26,7 @@ public class HealthScript : MonoBehaviour {
   public void OnTriggerEnter2D(Collider2D otherCollider){
     // Is this a shot?
     ShotScript shot = otherCollider.gameObject.GetComponent<ShotScript>();
-    if (shot != null)
-    {
+    if (shot != null){
       // Avoid friendly fire
       if (shot.isEnemyShot != isEnemy){
         Damage(shot.damage);
