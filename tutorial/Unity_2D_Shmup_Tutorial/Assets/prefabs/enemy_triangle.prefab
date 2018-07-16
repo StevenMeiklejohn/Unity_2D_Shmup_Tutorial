@@ -105,7 +105,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotPreFab: {fileID: 4643620376889968, guid: e04acff2920684bc0b93889d8f64544d, type: 2}
-  shootingRate: 0.4
+  shootingRate: 1
 --- !u!212 &212098529522166980
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -24,6 +24,8 @@ GameObject:
   - component: {fileID: 60785838800997478}
   - component: {fileID: 50206132948989114}
   - component: {fileID: 114281139876151232}
+  - component: {fileID: 114237795341274234}
+  - component: {fileID: 114571852186652558}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -37,9 +39,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1023638592810530}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.31923282, y: 0.06198351, z: 0.029773744}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4, y: 0.06198351, z: 0.029773744}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -115,6 +117,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114237795341274234
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1023638592810530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b563b14ff88014f8b89f625984d68161, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotPreFab: {fileID: 4783585285039286, guid: 40ea45a8230cd4670aad6bd481258fc6, type: 2}
+  shootingRate: 0.25
 --- !u!114 &114281139876151232
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -126,7 +141,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8d819f4fc7b0469e95eb6b5639ba0b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: 50, y: 50}
+  speed: {x: 10, y: 10}
+--- !u!114 &114571852186652558
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1023638592810530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f7d33c9451c4bf98fe283844df2886, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 1
+  isEnemy: 0
 --- !u!212 &212112157123814988
 SpriteRenderer:
   m_ObjectHideFlags: 1

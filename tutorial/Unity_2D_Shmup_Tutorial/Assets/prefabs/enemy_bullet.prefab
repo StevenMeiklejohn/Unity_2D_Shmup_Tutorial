@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  isEnemyShot: 0
+  isEnemyShot: 1
 --- !u!114 &114988259061119798
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -134,8 +134,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9979ffc61c94e4de2acf25ada9a91592, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: 10, y: 10}
-  direction: {x: -1, y: 0}
+  speed: {x: 5, y: 10}
+  direction: {x: -1, y: 1}
 --- !u!212 &212620851301773448
 SpriteRenderer:
   m_ObjectHideFlags: 1

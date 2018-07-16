@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: 95547795474737514}
   - component: {fileID: 50406687586733488}
   - component: {fileID: 60334380430948870}
+  - component: {fileID: 114981526502538150}
+  - component: {fileID: 114341979924883588}
   m_Layer: 0
   m_Name: blue_bullet
   m_TagString: Untagged
@@ -111,6 +113,32 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114341979924883588
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1976217638015970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9979ffc61c94e4de2acf25ada9a91592, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {x: 10, y: 10}
+  direction: {x: -1, y: 0}
+--- !u!114 &114981526502538150
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1976217638015970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac35ceb0edfb94524acadf694fc41656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  isEnemyShot: 0
 --- !u!212 &212917289078401988
 SpriteRenderer:
   m_ObjectHideFlags: 1

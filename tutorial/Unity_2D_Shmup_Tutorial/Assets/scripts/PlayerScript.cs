@@ -47,4 +47,24 @@ public class PlayerScript : MonoBehaviour {
     // 6 - Move the game object
     rigidbodyComponent.velocity = movement;
   }
+
+    void OnCollisionEnter2D(Collision2D collision){
+        Debug.Log("OncollisionEnter2D triggered");
+
+        // Collision with enemy
+        EnemyScript enemy = collision.gameObject.GetComponent<EnemyScript>();
+        if (enemy != null)
+        {
+            // Kill the enemy
+            HealthScript enemyHealth = enemy.GetComponent<HealthScript>();
+            if (enemyHealth != null) enemyHealth.Damage(enemyHealth.hp);
+
+            HealthScript playerHealth = this.GetComponent<HealthScript>();
+            if (playerHealth != null) playerHealth.Damage(1);
+
+
+        }
+
+
+    }
 }
